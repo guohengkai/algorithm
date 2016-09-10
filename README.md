@@ -18,7 +18,7 @@
 - [ ] Least Common Ancestor
 
 ## Data Structure
-- [ ] Heap
+- [x] Heap
 - [ ] Treap
 - [ ] Binary Indexed Tree
 - [ ] Segment Tree
