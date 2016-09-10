@@ -2,7 +2,7 @@
 ## Algorithm
 - [x] Quick Sort
 - [ ] Binary Search
-- [ ] Merge Sort
+- [x] Merge Sort
 - [x] Radix Sort
 - [x] KMP Algorithm
 

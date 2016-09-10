@@ -8,7 +8,6 @@
 
 const int n = 10;
 
-// main function for quick sort
 void qsort(vector<int>& nums, int left, int right)
 {
     int l = left;
