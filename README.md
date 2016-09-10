@@ -1,6 +1,6 @@
 # Algorithm and Data Structure (C++)
 ## Algorithm
--[] Quick Sort
+-[x] Quick Sort
 -[] Binary Search
 -[] Merge Sort
 -[] Radix Sort
