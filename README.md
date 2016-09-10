@@ -4,7 +4,7 @@
 -[] Binary Search
 -[] Merge Sort
 -[] Radix Sort
--[] KMP Algorithm
+-[x] KMP Algorithm
 
 ## Tree and Graph Algorithm
 -[] Dijkstra Algorithm
