@@ -22,7 +22,7 @@
 - [ ] Treap
 - [ ] Binary Indexed Tree
 - [ ] Segment Tree
-- [ ] Tire Graph
+- [x] Tire Graph
 - [ ] Union-Find Set
 - [ ] Suffix Array
 - [ ] KD Tree

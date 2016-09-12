@@ -10,7 +10,8 @@
 class TireGraph
 {
     public:
-        TireGraph(): root_(0)
+        explicit TireGraph(bool use_graph = false):
+            root_(0), use_graph_(use_graph)
         {
             nodes_.emplace_back();
         }
@@ -24,7 +25,7 @@ class TireGraph
             }
 
             // Build Tire graph
-            BuildACAutomation();
+            BuildGraph();
         }
 
         vector<int> Find(const string& str) const
@@ -34,12 +35,16 @@ class TireGraph
             for (int i = 0; i < str.size(); ++i)
             {
                 int idx = str[i] - 'a';
-                while (nodes_[cur].next[idx] == -1 && cur != root_)
+                if (!use_graph_)
                 {
-                    cur = nodes_[cur].fail;
+                    while (nodes_[cur].next[idx] == -1 && cur != root_)
+                    {
+                        cur = nodes_[cur].fail;
+                    }
                 }
+
                 cur = nodes_[cur].next[idx];
-                if (cur == -1)
+                if (!use_graph_ && cur == -1)
                 {
                     cur = root_;
                 }
@@ -87,7 +92,7 @@ class TireGraph
             nodes_[cur].word_length.insert(str.size());
         }
         
-        void BuildACAutomation()
+        void BuildGraph()
         {
             if (nodes_.empty())
             {
@@ -96,6 +101,7 @@ class TireGraph
             }
 
             deque<int> node_queue;
+            nodes_[root_].fail = root_;
             node_queue.push_back(root_);
             while (!node_queue.empty())
             {
@@ -114,21 +120,35 @@ class TireGraph
                         else
                         {
                             int fail = node.fail;
-                            while (fail != -1)
+                            while (nodes_[fail].next[i] == -1 && fail != root_)
                             {
                                 if (nodes_[fail].next[i] != -1)
                                 {
-                                    nodes_[child].fail = nodes_[fail].next[i];
                                     break;
                                 }
                                 fail = nodes_[fail].fail;
                             }
-                            if (fail == -1)
+                            if (nodes_[fail].next[i] == -1)
                             {
                                 nodes_[child].fail = root_;
                             }
+                            else
+                            {
+                                nodes_[child].fail = nodes_[fail].next[i];
+                            }
                         }
                         node_queue.push_back(child);
+                    }
+                    else if (use_graph_)
+                    {
+                        if (parent == root_)
+                        {
+                            node.next[i] = root_;
+                        }
+                        else
+                        {
+                            node.next[i] = nodes_[node.fail].next[i];
+                        }
                     }
                 }
             }
@@ -136,6 +156,7 @@ class TireGraph
 
         vector<Node> nodes_;
         int root_;
+        bool use_graph_;
 };
 
 int main()
@@ -146,7 +167,7 @@ int main()
     cout << "patterns: ";
     PrintVector(strs);
 
-    TireGraph tire_graph;
+    TireGraph tire_graph(true);
     tire_graph.Build(strs);
 
     const string target = "yasherhs";
