@@ -17,15 +17,6 @@ vector<int> GetRandomVector(int n, int scope)
     return nums;
 }
 
-void PrintVector(const vector<int>& nums)
-{
-    for (int num : nums)
-    {
-        cout << num << " ";
-    }
-    cout << endl;
-}
-
 bool IsSorted(const vector<int>& nums)
 {
     if (nums.empty())

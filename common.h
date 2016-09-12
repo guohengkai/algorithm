@@ -11,14 +11,26 @@
 #include <climits>
 #include <cmath>
 #include <algorithm>
+#include <deque>
 #include <iostream>
 #include <string>
+#include <unordered_set>
 #include <vector>
 
 using namespace std;  // To simplify the implementation, not good practice
 
 vector<int> GetRandomVector(int n, int scope = INT_MAX);
-void PrintVector(const vector<int>& nums);
+
+template <typename T>
+inline void PrintVector(const vector<T>& vec)
+{
+    for (const T& element : vec)
+    {
+        cout << element << " ";
+    }
+    cout << endl;
+}
+
 bool IsSorted(const vector<int>& nums);
 
 #endif
