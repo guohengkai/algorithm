@@ -1,16 +1,16 @@
 /*************************************************************************
-    > File Name: tire_graph.cpp
+    > File Name: trie_graph.cpp
     > Author: Guo Hengkai
-    > Description: Tire graph
+    > Description: trie graph
     > Created Time: Mon 12 Sep 2016 09:12:58 AM CST
  ************************************************************************/
 #include "common.h"
 
 // Only 26 lower characters
-class TireGraph
+class TrieGraph
 {
     public:
-        explicit TireGraph(bool use_graph = false):
+        explicit TrieGraph(bool use_graph = false):
             root_(0), use_graph_(use_graph)
         {
             nodes_.emplace_back();
@@ -18,13 +18,13 @@ class TireGraph
 
         void Build(const vector<string>& strs)
         {
-            // Build Tire
+            // Build trie
             for (const string& str : strs)
             {
                 Add(str);
             }
 
-            // Build Tire graph
+            // Build trie graph
             BuildGraph();
         }
 
@@ -96,7 +96,7 @@ class TireGraph
         {
             if (nodes_.empty())
             {
-                cout << "Tire empty" << endl;
+                cout << "trie empty" << endl;
                 return;
             }
 
@@ -167,12 +167,12 @@ int main()
     cout << "patterns: ";
     PrintVector(strs);
 
-    TireGraph tire_graph(true);
-    tire_graph.Build(strs);
+    TrieGraph trie_graph(true);
+    trie_graph.Build(strs);
 
     const string target = "yasherhs";
     cout << "target: " << target << endl;
-    vector<int> results = tire_graph.Find(target);
+    vector<int> results = trie_graph.Find(target);
     cout << "result: ";
     PrintVector(results);
     return 0;

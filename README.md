@@ -12,6 +12,7 @@
 - [ ] Shortest Path Faster Algorithm
 - [ ] Prim Algorithm
 - [ ] Kruskal Algorithm
+- [ ] Topological Sort
 - [ ] Dinic Algorithm
 - [ ] Minimum Cost Flow
 - [ ] Hungarian Algorithm
@@ -22,7 +23,7 @@
 - [ ] Treap
 - [ ] Binary Indexed Tree
 - [ ] Segment Tree
-- [x] Tire Graph
+- [x] Trie Graph
 - [ ] Union-Find Set
 - [ ] Suffix Array
 - [ ] KD Tree
