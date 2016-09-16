@@ -17,7 +17,7 @@
 - [ ] Topological Sort
 - [ ] Dinic Algorithm
 - [ ] Minimum Cost Flow
-- [ ] Hungarian Algorithm
+- [x] Hungarian Algorithm
 - [ ] Least Common Ancestor
 
 ## Data Structure
