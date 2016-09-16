@@ -5,8 +5,10 @@
 - [x] Merge Sort
 - [x] Radix Sort
 - [x] KMP Algorithm
+- [x] Big Interger Mutiplication
 
 ## Tree and Graph Algorithm
+- [ ] Tree Traversal
 - [ ] Dijkstra Algorithm
 - [ ] Floyd Algorithm
 - [ ] Shortest Path Faster Algorithm
