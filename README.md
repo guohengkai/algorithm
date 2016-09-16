@@ -1,7 +1,7 @@
 # Algorithm and Data Structure (C++)
 ## Algorithm
 - [x] Quick Sort
-- [ ] Binary Search
+- [x] Binary Search
 - [x] Merge Sort
 - [x] Radix Sort
 - [x] KMP Algorithm
