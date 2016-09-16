@@ -14,7 +14,7 @@
 - [ ] Shortest Path Faster Algorithm
 - [ ] Prim Algorithm
 - [ ] Kruskal Algorithm
-- [ ] Topological Sort
+- [x] Topological Sort
 - [ ] Dinic Algorithm
 - [ ] Minimum Cost Flow
 - [x] Hungarian Algorithm
