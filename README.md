@@ -26,6 +26,6 @@
 - [ ] Binary Indexed Tree
 - [ ] Segment Tree
 - [x] Trie Graph
-- [ ] Union-Find Set
+- [x] Union-Find Set
 - [ ] Suffix Array
 - [ ] KD Tree
