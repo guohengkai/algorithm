@@ -22,9 +22,11 @@ class UnionFindSet
 
         void Add(int x, int y)
         {
-            if (Find(x) != Find(y))
+            int fx = Find(x);
+            int fy = Find(y);
+            if (fx != fy)
             {
-                father_[x] = father_[y];
+                father_[fx] = fy;
             }
         }
 
