@@ -24,7 +24,7 @@
 - [x] Heap
 - [x] Treap
 - [x] Binary Indexed Tree
-- [ ] Segment Tree
+- [x] Segment Tree
 - [x] Trie Graph
 - [x] Union-Find Set
 - [ ] Suffix Array
