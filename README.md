@@ -23,7 +23,7 @@
 ## Data Structure
 - [x] Heap
 - [x] Treap
-- [ ] Binary Indexed Tree
+- [x] Binary Indexed Tree
 - [ ] Segment Tree
 - [x] Trie Graph
 - [x] Union-Find Set
