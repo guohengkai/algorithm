@@ -9,8 +9,8 @@
 
 ## Tree and Graph Algorithm
 - [x] Tree Traversal
-- [ ] Dijkstra Algorithm
-- [ ] Floyd Algorithm
+- [x] Dijkstra Algorithm
+- [x] Floyd Algorithm
 - [ ] Shortest Path Faster Algorithm
 - [ ] Prim Algorithm
 - [ ] Kruskal Algorithm
