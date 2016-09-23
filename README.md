@@ -11,7 +11,7 @@
 - [x] Tree Traversal
 - [x] Dijkstra Algorithm
 - [x] Floyd Algorithm
-- [ ] Shortest Path Faster Algorithm
+- [x] Shortest Path Faster Algorithm
 - [ ] Prim Algorithm
 - [ ] Kruskal Algorithm
 - [x] Topological Sort
