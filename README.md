@@ -12,8 +12,8 @@
 - [x] Dijkstra Algorithm
 - [x] Floyd Algorithm
 - [x] Shortest Path Faster Algorithm
-- [ ] Prim Algorithm
-- [ ] Kruskal Algorithm
+- [x] Prim Algorithm
+- [x] Kruskal Algorithm
 - [x] Topological Sort
 - [ ] Dinic Algorithm
 - [ ] Minimum Cost Flow
