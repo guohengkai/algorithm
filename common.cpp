@@ -33,3 +33,31 @@ bool IsSorted(const vector<int>& nums)
     }
     return true;
 }
+
+Node* Vec2Tree(const vector<int>& vec)
+{
+    if (vec.empty())
+    {
+        return nullptr;
+    }
+
+    size_t n = vec.size();
+    vector<Node*> nodes(n, nullptr);
+    for (size_t i = n; i > 0; --i)
+    {
+        if (vec[i - 1] >= 0)
+        {
+            nodes[i - 1] = new Node(vec[i - 1]);
+            size_t child = i << 1;
+            if (child <= n)
+            {
+                nodes[i - 1]->left = nodes[child - 1];
+            }
+            if (child < n)
+            {
+                nodes[i - 1]->right = nodes[child];
+            }
+        }
+    }
+    return nodes[0];
+}

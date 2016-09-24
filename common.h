@@ -14,6 +14,7 @@
 #include <deque>
 #include <iostream>
 #include <string>
+#include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
@@ -32,5 +33,18 @@ inline void PrintVector(const vector<T>& vec)
 }
 
 bool IsSorted(const vector<int>& nums);
+
+struct Node
+{
+    explicit Node(int val): data(val), left(nullptr), right(nullptr)
+    {
+        // empty constructor
+    }
+    int data;
+    Node* left;
+    Node* right;
+};
+
+Node* Vec2Tree(const vector<int>& vec);
 
 #endif
