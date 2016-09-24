@@ -1,4 +1,10 @@
 # Algorithm and Data Structure (C++)
+## Usage
+Each cpp file is only dependent on common.h, so you can simply use the shell script to run:
+``` bash
+sh run.sh file_name.cpp
+```
+
 ## Algorithm
 - [x] Quick Sort
 - [x] Binary Search
