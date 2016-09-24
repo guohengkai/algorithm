@@ -18,7 +18,7 @@
 - [ ] Dinic Algorithm
 - [ ] Minimum Cost Flow
 - [x] Hungarian Algorithm
-- [ ] Least Common Ancestor
+- [x] Least Common Ancestor
 
 ## Data Structure
 - [x] Heap
