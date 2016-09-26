@@ -34,7 +34,7 @@ int Hungarian(const vector<vector<int>>& edges)
     vector<int> result(n, -1);
     for (int i = 0; i < m; ++i)
     {
-        vector<bool> visit(i, false);
+        vector<bool> visit(n, false);
         if (Find(edges, i, result, visit))
         {
             ++count;
