@@ -7,12 +7,17 @@ sh run.sh file_name.cpp
 
 ## Algorithm
 - [x] Quick Sort
+- [ ] Fast Partition
 - [x] Binary Search
 - [x] Merge Sort
 - [x] Radix Sort
 - [x] KMP Algorithm
 - [x] Big Interger Mutiplication
 - [x] Extended Euclidean
+- [ ] Sieve of Eratosthenes
+- [ ] Miller-Rabbin Test
+- [ ] Sparse Table Algorithm
+- [ ] Graham-Scan Algorithm
 
 ## Tree and Graph Algorithm
 - [x] Tree Traversal
@@ -25,7 +30,8 @@ sh run.sh file_name.cpp
 - [ ] Dinic Algorithm
 - [ ] Minimum Cost Flow
 - [x] Hungarian Algorithm
-- [x] Least Common Ancestor
+- [x] Least Common Ancestors
+- [ ] Tarjan Algorithm
 
 ## Data Structure
 - [x] Heap
