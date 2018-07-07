@@ -40,8 +40,8 @@ class SegmentTree
         {
             if (left == l && right == r)
             {
-                tree_[cur] += val;
-                count_[cur] += val;
+                count_[cur] += val * (r - l + 1);
+                tree_[cur] = count_[cur];
                 return;
             }
 
